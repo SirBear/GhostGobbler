@@ -30,9 +30,12 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	// Getters and Setters
+	USpringArmComponent* GetSpringArmComponent();
+	void SetSpringArmComponent(USpringArmComponent* InSpringArmComponent);
 
-
-
+	UCameraComponent* GetCameraComponent();
+	void SetCameraComponent(UCameraComponent* InCameraComponent);
 	
 protected:
 	virtual void BeginPlay() override;
